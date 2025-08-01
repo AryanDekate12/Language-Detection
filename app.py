@@ -12,7 +12,7 @@ st.set_page_config(
 import pandas as pd
 import numpy as np
 import pickle  # To load your saved model and vectorizer
-
+import gzip
 # --- 1. Load your pre-trained model and vectorizer ---
 @st.cache_resource
 def load_assets():
