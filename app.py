@@ -72,7 +72,7 @@ if st.button("Detect Language"):
             input_vector = vectorizer.transform([user_input])
             prediction = model.predict(input_vector)
             code = prediction[0]
-            name = language_names.get(code, "Unknown")
+            name = language_names.get(code, "")
             flag = language_flags.get(code, "")
             st.success(f"{flag} **Detected Language:** {name} (`{code}`)")
             st.balloons()
